@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- tailwing and daisy UI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- custom color and font -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                mainColor: '#B68C5A',
+              },
+              fontFamily:{
+                mainFont:"EB Garamond"
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+    <!-- This if for heading -->
+    <header class="lg:mx-56 md:mx-32">
+        <div class="navbar bg-base-100">
+            <div class=" flex-1">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li>
+                  <li><a>Services</a></li>
+                  <li><a>Cases</a></li>
+                  <li><a>Blog</a></li>
+                  <li><a>Contact US</a></li>
+              </div>
+              <img src="./images/logo2.png" class="cursor-pointer" alt="">
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-5">
+                <li><a>Home</a></li>
+                <li><a>Services</a></li>
+                <li><a>Cases</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact US</a></li>
+              </ul>
+            </div>
+            <div class="">
+              <a class="btn bg-mainColor text-white sm:mt-2">Free Consultation</a>
+            </div>
+          </div>
+
+          <!-- heading section -->
+
+          <div
+            class="hero lg:h-[450px] lg:mt-10 md:mt-5 rounded-lg"
+            style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold font-mainFont">We Provide Effective Legal Solutions</h1>
+                <p class="mb-5">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                    quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+                <div class="lg:mt-5 md:mt-3">
+                    <input
+                    type="text"
+                    placeholder="Type here"
+                    class="input  w-full max-w-xs" />
+                    <button class="bg-mainColor px-7 text-white py-3 rounded-lg">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+<!-- This is for main content  -->
+
+        <main class="lg:mx-56 md:mx-32">
+            <!-- THis is  for Practice Area -->
+             <div class="lg:w-1/2 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
+                <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">The Legal Practice Area</h1>
+                <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+             </div>
+
+             <!-- Practice Area Cards -->
+
+             <div class="grid lg:grid-cols-3 md:grid-cols-2 lg:mb-14 md:mb-7 mb-4">
+                <!-- first -->
+                <div class="grid place-items-center text-center border-b-2">
+                    <img class="mt-4" src="./images/business.png" alt="">
+                    <h2 class="font-mainFont text-3xl font-bold mt-3">Business Law</h2>
+                    <p class="w-3/4 my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="mb-12" src="./images/Frame.png" alt="">
+                </div>
+                <!-- second -->
+                <div class="grid place-items-center text-center border-2">
+                    <img class="mt-4" src="./images/criminal.png" alt="">
+                    <h2 class="font-mainFont text-3xl font-bold mt-3">Criminal Law</h2>
+                    <p class="w-3/4 my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="mb-12" src="./images/Frame.png" alt="">
+                </div>
+                <!-- Third -->
+                <div class="grid place-items-center text-center border-b-2">
+                    <img class="mt-4" src="./images/child.png" alt="">
+                    <h2 class="font-mainFont text-3xl font-bold mt-3">Child Support</h2>
+                    <p class="w-3/4 my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="mb-12" src="./images/Frame.png" alt="">
+                </div>
+                <!-- Fourth -->
+                <div class="grid place-items-center text-center">
+                    <img class="mt-4" src="./images/education.png" alt="">
+                    <h2 class="font-mainFont text-3xl font-bold mt-3">Education Law</h2>
+                    <p class="w-3/4 my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="mb-12" src="./images/Frame.png" alt="">
+                </div>
+                <!-- Fifth -->
+                <div class="grid place-items-center text-center border-l-2 border-r-2 border-b-2">
+                    <img class="mt-4" src="./images/divorce.png" alt="">
+                    <h2 class="font-mainFont text-3xl font-bold mt-3">Divorce Law</h2>
+                    <p class="w-3/4 my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="mb-12" src="./images/Frame.png" alt="">
+                </div>
+                <!-- Last -->
+                <div class="grid place-items-center text-center">
+                    <img class="mt-4" src="./images/tax.png" alt="">
+                    <h2 class="font-mainFont text-3xl font-bold mt-3">Tax Law</h2>
+                    <p class="w-3/4 my-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <img class="mb-12" src="./images/Frame.png" alt="">
+                </div>
+             </div>
+
+             <!-- What Our Client Say -->
+
+             <div class="lg:w-1/2 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
+                <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">What Our Client Say</h1>
+                <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+             </div>
+
+             <!-- Testimonial Slider -->
+
+             <div class="relative bg-cover bg-center bg-no-repeat h-96 lg:mb-20 md:mb-10 mb-5" style="background-image: url('./images/banner.png');">
+                <div class="absolute inset-0 bg-black opacity-50"></div>
+                
+                <div class="flex items-center justify-center h-full">
+                  <div class="carousel w-full ">
+                    
+                    <div id="slide1" class="carousel-item relative w-full">
+                    <!-- first -->
+                      <div class="p-6 rounded-lg  text-center w-[70%] mx-auto">
+                        <img src="./images/client.jpeg" class="w-16 h-16 mx-auto rounded-full" alt="">
+                        <p class="text-white text-lg">"Daisy UI is incredibly easy to use, and it makes Tailwind even more powerful."</p>
+                        <h3 class="mt-4 text-white font-semibold">John Doe</h3>
+                      </div>
+                      <a href="#slide3" class="btn btn-circle absolute left-0 top-1/2 transform -translate-y-1/2">❮</a> 
+                      <a href="#slide2" class="btn btn-circle absolute right-0 top-1/2 transform -translate-y-1/2">❯</a>
+                    </div> 
+                    
+                    <div id="slide2" class="carousel-item relative w-full">
+                        <!-- second -->
+                      <div class="p-6 rounded-lg  text-center w-[70%] mx-auto">
+                        <img src="./images/client.jpeg" class="w-16 h-16 mx-auto rounded-full" alt="">
+                        <p class="text-white text-lg">"I love how customizable Daisy UI is. It's perfect for my projects."</p>
+                        <h3 class="mt-4 text-white font-semibold">Jane Smith</h3>
+                      </div>
+                      <a href="#slide1" class="btn btn-circle absolute left-0 top-1/2 transform -translate-y-1/2">❮</a> 
+                      <a href="#slide3" class="btn btn-circle absolute right-0 top-1/2 transform -translate-y-1/2">❯</a>
+                    </div> 
+                    
+                    <div id="slide3" class="carousel-item relative w-full">
+                        <!-- third -->
+                      <div class="p-6 rounded-lg  text-center w-[70%] mx-auto">
+                        <img src="./images/client.jpeg" class="w-16 h-16 mx-auto rounded-full" alt="">
+                        <p class="text-white text-lg">"Tailwind and Daisy UI together make frontend development a breeze!"</p>
+                        <h3 class="mt-4 text-white font-semibold">Mark Wilson</h3>
+                      </div>
+                      <a href="#slide2" class="btn btn-circle absolute left-0 top-1/2 transform -translate-y-1/2">❮</a> 
+                      <a href="#slide1" class="btn btn-circle absolute right-0 top-1/2 transform -translate-y-1/2">❯</a>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+               <!-- Testimonial Slider -->
+
+               <!-- Frequently Asked Any Questions -->
+
+              <section class="lg:mb-12 md:mb-5 mb-4">
+                <div class="lg:w-3/4 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
+                    <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">Frequently Asked Any Questions</h1>
+                    <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                 </div>
+                 <div class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 mt-5">
+                    <div>
+                        <div class="collapse bg-[#F3F3F3] my-3">
+                            <input type="radio" name="my-accordion-1" checked="checked" />
+                            <div class="collapse-title text-xl font-bold">1. What services do you offer?</div>
+                            <div class="collapse-content">
+                              <p>We provide comprehensive legal services in areas such as business law, family law, criminal defense, estate planning, and personal injury.
+                            </p>
+                            </div>
+                          </div>
+                          <div class="collapse bg-[#F3F3F3] my-3">
+                            <input type="radio" name="my-accordion-1"  />
+                            <div class="collapse-title text-xl font-bold">2. How can I schedule a consultation?</div>
+                            <div class="collapse-content">
+                              <p>You can schedule a consultation by calling our office, filling out our online contact form, or sending us an email. We'll respond promptly to set up a convenient time.</p>
+                            </div>
+                          </div>
+                          <div class="collapse bg-[#F3F3F3] my-3">
+                            <input type="radio" name="my-accordion-1"  />
+                            <div class="collapse-title text-xl font-bold">3. What should I bring to my initial consultation?</div>
+                            <div class="collapse-content">
+                              <p>For your initial consultation, bring any relevant documents, identification, and a list of questions you have regarding your legal matter.</p>
+                            </div>
+                          </div>
+                          <div class="collapse bg-[#F3F3F3] my-3">
+                            <input type="radio" name="my-accordion-1" checked="checked" />
+                            <div class="collapse-title text-xl font-bold">4. How do you determine your fees?</div>
+                            <div class="collapse-content">
+                              <p>Our fees vary depending on the complexity of the case. We offer transparent billing and will discuss fees during your initial consultation.</p>
+                            </div>
+                          </div>
+                    </div>
+                    <div>
+                        <img class="lg:ml-5" src="./images/faq.png" alt="">
+                    </div>
+                 </div>
+              </section>
+                <!-- Frequently Asked Any Questions -->
+        </main>
+</body>
+</html>
