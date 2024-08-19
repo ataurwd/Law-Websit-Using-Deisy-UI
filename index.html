@@ -89,8 +89,8 @@
                     <input
                     type="text"
                     placeholder="Type here"
-                    class="input  w-full max-w-xs" />
-                    <button class="bg-mainColor px-7 text-white py-3 rounded-lg">Search</button>
+                    class="input lg:w-full max-w-xs md:w-full w-[60%]" />
+                    <button class="bg-mainColor lg:px-7 lg:py-3 md:px-7 md:py-3 rounded-lg px-5 py-3 text-white mt-3">Search</button>
                 </div>
             </div>
         </div>
@@ -103,7 +103,7 @@
 
         <main class="lg:mx-56 md:mx-32">
             <!-- THis is  for Practice Area -->
-             <div class="lg:w-1/2 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
+             <div class=" lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
                 <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">The Legal Practice Area</h1>
                 <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
              </div>
@@ -157,7 +157,7 @@
 
              <!-- What Our Client Say -->
 
-             <div class="lg:w-1/2 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
+             <div class=" lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
                 <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">What Our Client Say</h1>
                 <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
              </div>
@@ -210,7 +210,7 @@
 
                <!-- Frequently Asked Any Questions -->
 
-              <section class="lg:mb-12 md:mb-5 mb-4">
+              <section class="lg:mb-12 md:mb-5 mb-4 mx-3">
                 <div class="lg:w-3/4 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
                     <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">Frequently Asked Any Questions</h1>
                     <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
@@ -253,6 +253,103 @@
                  </div>
               </section>
                 <!-- Frequently Asked Any Questions -->
+
+                <!-- Contact With Us -->
+                <section class="lg:my-12 md:my-8 my-4 mx-4">
+                  <div class="lg:w-3/4 lg:mx-auto text-center lg:mt-12 md:mt-5 mx-3 mb-5">
+                    <h1 class="font-mainFont lg:text-5xl md:text-4xl lg:mb-4 md:mb-3 text-2xl mt-3">Contact With Us</h1>
+                    <p class="lg:mb-10 md:mb-5 lg:w-full md:w-1/2 md:mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                 </div>
+                 <div class="grid lg:grid-cols-2 md:grid-cols-1">
+                  <!-- contact info section -->
+                  <div class=" grid lg:grid-cols-2 md:grid-cols-2">
+                    <div class="flex flex-col justify-center items-center text-center bg-gray-200 pt-5 border-b-2 border-[#CFCFCF]">
+                      <img class="w-10" src="./images/location.png" alt="">
+                      <h4 class="my-3 text-2xl font-semibold">Address</h4>
+                      <p class="w-3/4">A108 Adam Street,
+                        New York, NY 535022</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center bg-gray-200 pt-5 border-[#CFCFCF] border-l-2 border-b-2">
+                      <img class="w-10" src="./images/location.png" alt="">
+                      <h4 class="my-3 text-2xl font-semibold">Call Us</h4>
+                      <p class="w-3/4">+88 01750 00 00 00
+                        +88 01750 00 00 00</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center bg-gray-200 pt-5">
+                      <img class="w-10" src="./images/location.png" alt="">
+                      <h4 class="my-3 text-2xl font-semibold">Email Us</h4>
+                      <p class="w-3/4">info@gmail.com
+                        info@gmail.com</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center bg-gray-200 pt-5 border-[#CFCFCF] border-l-2">
+                      <img class="w-10" src="./images/location.png" alt="">
+                      <h4 class="my-3 text-2xl font-semibold">Working Hours</h4>
+                      <p class="w-3/4">Mon-Fri: 9AM to 5PM
+                        Sunday: 9AM to 1 PM</p>
+                    </div>
+                  </div>
+                  <!-- form section -->
+                  <div class=" lg:ml-6 md:mt-10 mt-5">
+                    <form novalidate="" class="space-y-6">
+                      <div>
+                        <label for="name" class="text-sm">Full name</label>
+                        <input id="name" type="text" placeholder="" class="w-full p-3 rounded bg-gray-200">
+                      </div>
+                      <div>
+                        <label for="email" class="text-sm">Email</label>
+                        <input id="email" type="email" class="w-full p-3 rounded bg-gray-200">
+                      </div>
+                      <div>
+                        <label for="email" class="text-sm">Subject</label>
+                        <input id="email" type="text" class="w-full p-3 rounded bg-gray-200">
+                      </div>
+                      <div>
+                        <label for="message" class="text-sm">Message</label>
+                        <textarea id="message" rows="3" class="w-full p-3 rounded bg-gray-200"></textarea>
+                      </div>
+                      <button type="submit" class="w-full p-3 text-sm font-bold tracking-wide uppercase rounded bg-mainColor text-white">Send Message</button>
+                    </form>
+                  </div>
+                  </div>
+                </section>
         </main>
+
+        <!-- footer section -->
+         <footer>
+          <footer class="footer bg-black text-white text-base-content py-10 lg:px-40 pl-10">
+            <nav class="w-[300px]">
+              <img src="./images/logo2.png" alt="">
+              <p class="lg:w-full lg:mt-5 md:mt-4 mt-02 w-3/4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Company</h6>
+              <a class="link link-hover">About us</a>
+              <a class="link link-hover">Contact</a>
+              <a class="link link-hover">Jobs</a>
+              <a class="link link-hover">Press kit</a>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Legal</h6>
+              <a class="link link-hover">Terms of use</a>
+              <a class="link link-hover">Privacy policy</a>
+              <a class="link link-hover">Cookie policy</a>
+            </nav>
+            <form>
+              <h6 class="footer-title">Newsletter</h6>
+              <fieldset class="form-control lg:w-80 md:w-72 w-40">
+                <label class="label">
+                  <span class="label-text text-white">Enter your email address</span>
+                </label>
+                <div class="join">
+                  <input
+                    type="text"
+                    placeholder="username@site.com"
+                    class="input input-bordered join-item w-40" />
+                  <button class="btn btn-primary join-item"><img src="./images/Frame.png" alt=""></button>
+                </div>
+              </fieldset>
+            </form>
+          </footer>
+         </footer>
 </body>
 </html>
